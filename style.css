@@ -1,0 +1,139 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  display: grid;
+}
+
+.grid_1-1-1-1-1-1 img {
+  height: 100%;
+  object-fit: fill;
+  aspect-ratio: 1/1;
+}
+
+/* main {
+  background-color: #f0efeb;
+} */
+
+.hero {
+  background-image: url(herobackground.jpg);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+header h1 {
+  text-align: left;
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 400%;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header img {
+  max-height: 50px;
+  width: auto;
+  filter: invert(1);
+}
+
+/* HEADER SLUT */
+
+/* Fotogalleri */
+.grid_1-1-1-1-1-1 img:hover {
+  filter: brightness(1.2);
+  transition: filter 0.4s ease;
+  filter: blur(2px);
+}
+
+.grid_1-1-1-1-1-1 img {
+  border: 2px solid #9c2542;
+  border-style: dotted;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid_1-1-1-1-1-1 img:hover {
+  transform: scale(1.05) translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.grid_1-1-1-1-1-1 {
+  padding: 40px;
+}
+
+.grid_1-1-1-1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  border: groove;
+  border-color: gray;
+  border-radius: 10px;
+  background-color: rgb(211, 211, 211, 0.3);
+  margin: 20px;
+}
+/* Fotogalleri SLUT */
+
+/* FOOTER */
+footer {
+  background-color: rgb(169, 169, 169);
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+/* FOOTER SLUT */
+
+.grid_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+section {
+  background-color: red;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.fotogalleri {
+  background-color: transparent;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titelfotogalleri {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 100%;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+}
